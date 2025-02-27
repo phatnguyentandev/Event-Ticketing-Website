@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode styles */
+.light {
+  --primary-color: #f9ae2c; /* Màu văn bản chính */
+  --second-color: #383837; /* Màu văn bản phụ */
+}
+
+/* Dark mode styles */
+.dark {
+  --primary-color: #000000; /* Màu văn bản chính */
+  --second-color: #f9ae2c; /* Màu văn bản phụ */
+}
+
+.sidebar {
+  width: 250px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary-color);
+}
+
+.border-input {
+  @apply w-full p-2 border border-solid border-gray-300 rounded-sm mb-2;
+}
